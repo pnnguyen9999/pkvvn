@@ -1,0 +1,57 @@
+.rad-lb{
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 15px;
+}
+.rad-lb .sp-lb{
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c8ccd4;
+  border-radius: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rad-lb .sp-lb:after{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #225cff;
+  transform: scale(0);
+  transition: all 0.2s ease;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.rad-lb:hover .label:after{
+  transform: scale(3.6);
+}
+
+input[type="radio"]:checked + .sp-lb{
+  border-color: #225cff;
+}
+
+input[type="radio"]:checked + .sp-lb:after{
+  transform: scale(1);
+  transition: all 0.2s cubic-bezier(0.35,0.9,0.4,0.9);
+  opacity: 1;
+}
+
+.rad-hidden{
+  display: none;
+}
+
+.notify-card{
+  height: 60px;
+  background-color: white;
+  border-left: 5px solid #e74c3c;
+}
