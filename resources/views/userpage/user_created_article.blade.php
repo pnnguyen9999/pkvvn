@@ -42,7 +42,7 @@
       </th>
       <th>{{ $article->subject->name }}</th>
       @if($article->getState->state == "upload")
-      <th style="color: #fdcb6e">Đợi phê duyệt</th>
+      <th style="color: #27ae60">Đã đăng !</th>
       @elseif($article->getState->state == "save")
       <th>Bản nháp</th>
       @elseif($article->getState->state == "delete")

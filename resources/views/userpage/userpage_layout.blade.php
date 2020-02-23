@@ -56,9 +56,9 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-lightbulb"></i>
+          <i class="fas fa-dice"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">BÓNG ĐÈN</div>
+        <div class="sidebar-brand-text mx-3">PKV VN</div>
       </a>
 
       <!-- Divider -->
@@ -89,8 +89,8 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Bài viết:</h6>
             <a class="collapse-item" href="/user/article/new" style="background-color: #2ecc71;color: white">Tạo bài viết</a>
-            <a class="collapse-item" href="/user/article/list">Bài viết của tôi</a>
-            <a class="collapse-item" href="/user/article/rules">Quy định viết bài</a>
+            <a class="collapse-item" href="/user/article/list">Quản lý bài viết</a>
+           
           </div>
         </div>
       </li>
@@ -98,14 +98,13 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
+      <!-- Heading
       <div class="sidebar-heading">
         Phụ trợ
-      </div>
+      </div> -->
 
       
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
+     
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -193,16 +192,12 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="/user/profile">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Hồ sơ
-                </a>
                 <a class="dropdown-item" href="/user/se">
                   <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
                   Đổi mật khẩu
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="/logout" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Đăng xuất
                 </a>
@@ -228,7 +223,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy Sb Admin 2; Bóng Đèn 2019</span>
+            <span>Web engine by Glixylus Team Developers | Feb - 20</span>
           </div>
         </div>
       </footer>

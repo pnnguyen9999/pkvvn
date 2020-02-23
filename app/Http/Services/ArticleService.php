@@ -25,11 +25,11 @@ class ArticleService{
         $article_state->state = $request->submit;
         $article_state->save();
 
-        $tagIDs = TagService::addIfNotExist($request->tag);
+        //$tagIDs = TagService::addIfNotExist($request->tag);
 
-        foreach($tagIDs as $tagid){
-          TagService::add_article_tag($tagid,$article->id);
-        }
+        // foreach($tagIDs as $tagid){
+        //   TagService::add_article_tag($tagid,$article->id);
+        // }
       }catch(Exception $e){
         return -1;
       }
@@ -55,8 +55,8 @@ class ArticleService{
         'state' => $request->submit
       ]);
 
-      $tagIDs = TagService::addIfNotExist($request->tag);
-      TagService::update_article_tag($tagIDs,$article->id);
+      //$tagIDs = TagService::addIfNotExist($request->tag);
+      //TagService::update_article_tag($tagIDs,$article->id);
 
     }
 
@@ -68,10 +68,10 @@ class ArticleService{
       $article_state = ArticleState::where('article_id',$article_id)->first();
       if($article_state) $article_state->delete();
 
-      $article_tags = ArticleTag::where('article_id',$article_id)->get();
-      foreach($article_tags as $article_tag){
-        $article_tag->delete();
-      }
+      //$article_tags = ArticleTag::where('article_id',$article_id)->get();
+      // foreach($article_tags as $article_tag){
+      //   $article_tag->delete();
+      // }
 
       $article = Article::find($article_id);
       if($article) $article->delete();

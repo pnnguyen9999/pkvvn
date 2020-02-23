@@ -79,7 +79,7 @@
     </textarea>
   </div>
 
-  <!-- Page Heading -->
+  <!-- Page Heading
   <h1 class="h5 mb-4 text-gray-800">Thêm thẻ tag</h1>
 
   <div class="form-group">
@@ -88,7 +88,7 @@
       <option value="{{ $tag->tag->id }}" selected>{{ $tag->tag->name }}</option>
       @endforeach
     </select>
-  </div>
+  </div> -->
 
   <div class="row d-flex justify-content-center">
     <div class="col-md-6 col-sm-11 d-flex justify-content-around">

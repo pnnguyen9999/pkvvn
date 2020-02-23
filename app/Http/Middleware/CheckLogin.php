@@ -16,7 +16,7 @@ class CheckLogin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check() == false){
+        if(Auth::check() == false || Auth::user()->alive == null){
             return redirect()->to('/login');
           }
         return $next($request);
